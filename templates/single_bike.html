@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block extracss %}
+
+{% endblock %}
+
+{% block pagetitle %}{{ bikes.year }} {{ bikes.make }} {{ bikes.model }}{% endblock %}
+
+{% block jumbotron %}
+    <div class="jumbotron">
+    <h1 class="text-center">{{ bikes.year }} {{ bikes.make }} {{ bikes.model }}</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <img class="col-md-6" src="{{ bikes.picture }}" alt="{{ bikes.year }} {{ bikes.make }} {{ bikes.model }}">
+        <div class="col-md-6">
+            <ul class="list-unstyled">
+                <li>{{ bikes.build }}</li>
+                <li>{{ bikes.type }}</li>
+                <li>{{ bikes.frame_type }}</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

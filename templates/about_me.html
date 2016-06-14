@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block pagetitle %}All about Davis{% endblock %}
+
+{% block jumbotron %}
+    <h1 class="text-center">About Davis</h1>
+{% endblock %}
+
+{% block content %}
+    <h2>My current bike is a {{ bikes.year }} {{ bikes.make }} {{ bikes.model }}</h2>
+    <br>
+    <div class="row">
+    <div class="col-md-12">
+        <div class="pull-right"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/DDavis.jpg/220px-DDavis.jpg" alt="Davis"></div>
+        <div class="about-text"><p>Wayfarers everyday carry kombucha kitsch, tote bag cold-pressed poutine green juice banjo farm-to-table yuccie shoreditch. Dreamcatcher echo park williamsburg pork belly, kogi distillery art party viral listicle ethical pour-over irony. Vice taxidermy kickstarter wolf lomo, salvia cornhole yuccie marfa vegan yr cray mlkshk locavore. 90's stumptown chartreuse man bun. Pabst authentic tacos, cliche hella kinfolk vice 8-bit single-origin coffee ethical. Blue bottle pinterest roof party portland freegan. Freegan normcore ugh leggings slow-carb typewriter, iPhone cardigan intelligentsia lomo raw denim.</p>
+        <p>Lumbersexual you probably haven't heard of them cold-pressed, deep v kale chips hashtag selvage ethical skateboard 8-bit salvia taxidermy trust fund. YOLO sriracha sartorial, cliche post-ironic blue bottle dreamcatcher. You probably haven't heard of them try-hard pop-up knausgaard. Selvage keytar street art, taxidermy godard fap kombucha DIY meggings hoodie. Actually small batch selvage, fashion axe readymade letterpress yuccie leggings mixtape XOXO keffiyeh gluten-free williamsburg. Yr before they sold out kogi tousled paleo humblebrag occupy. Kickstarter chicharrones kombucha food truck.</p></div>
+    </div>
+    </div>
+{% endblock %}

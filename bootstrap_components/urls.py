@@ -21,6 +21,7 @@ from my_bikes import views
 urlpatterns = [
     url(r'^$', views.index_view, name='index_view'),
     url(r'^mybikes/$', views.my_bikes_view, name='my_bikes_view'),
+    url(r'^mybikes/(?P<bike_id>\w+)/$', views.single_bike_view, name="bike_view"),
     url(r'^about_me$', views.about_view, name='about_view'),
     url(r'^admin/', admin.site.urls),
 ]

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block pagetitle %}My Bikes{% endblock %}
+
+{% block jumbotron %}
+    <h1 class="text-center">Bikes!</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+    {% for bike in bikes %}
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="{{ bike.picture }}" alt="{{ bike.year }} {{ bike.make }} {{ bike.model }}">
+              <div class="caption">
+                <h3>{{ bike.year }} {{ bike.make }} {{ bike.model }}</h3>
+                <ul>
+                    <li>{{ bike.build }}</li>
+                    <li>{{ bike.type }}</li>
+                    <li>{{ bike.frame_type }}</li>
+                </ul>
+                <p class="text-center"><a href="{% url 'bike_view' bike.id %}" class="btn btn-primary" role="button">See Bike</a></p>
+              </div>
+            </div>
+          </div>
+    {% endfor %}
+        </div>
+
+{% endblock %}
